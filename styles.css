@@ -1,7 +1,4 @@
- <style>
-
-
-    #graph-container {
+  #graph-container {
       width: 600px;
       height: 400px;
       border: 1px solid #ccc;
@@ -14,14 +11,14 @@
     }
 
     .btn-info {
-        background-color:#6b97b8;
+        background-color:#5683a5;
         border-color:#6b97b8;
         transition: background-color 0.35s ease, font-size 0.35s ease;
     }
 
     .btn-info:hover {
-        background-color:#56758d;
-        border-color:#56758d;
+        background-color:#6a96b3;
+        border-color:#698ba5;
         font-size:15px;
        
     }
@@ -53,6 +50,11 @@
         font-weight:800;
     }
 
+    .mini {
+background-color:#252e39a8 !important;
+box-shadow: 0px 0px 6px #4e667a;
+
+    }
     .card {
         background-color:rgba(42, 52, 67, 0.8);
         backdrop-filter: blur(4px);
@@ -85,4 +87,3 @@
   border-radius:20px;
   transition: all 0.5s ease;
 }
-  </style>
