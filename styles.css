@@ -1,3 +1,4 @@
+ <style>
 
 
     #graph-container {
@@ -12,17 +13,29 @@
       height: 100%;
     }
 
+    .btn-info {
+        background-color:#6b97b8;
+        border-color:#6b97b8;
+        transition: background-color 0.35s ease, font-size 0.35s ease;
+    }
+
+    .btn-info:hover {
+        background-color:#56758d;
+        border-color:#56758d;
+        font-size:15px;
+       
+    }
 .background {
     background-color:#001e51;
    
 }
 
-body {
-      background-image:url(https://i.postimg.cc/bNwX5mkS/output-onlinepngtools-8.png);
-}
     #app {
+        background-image:url(https://i.postimg.cc/bNwX5mkS/output-onlinepngtools-8.png);
         background-repeat:no-repeat;
         background-size:cover;
+        background-attachment:fixed;
+     
         font-family:"montserrat";
     }
     .controls {
@@ -43,5 +56,33 @@ body {
     .card {
         background-color:rgba(42, 52, 67, 0.8);
         backdrop-filter: blur(4px);
+        color:#fff
       
     }
+
+    /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius:20px;
+  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius:20px;
+  transition: background-color 0.5s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7f828d;
+  border-radius:20px;
+  transition: all 0.5s ease;
+}
+  </style>
