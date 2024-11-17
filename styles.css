@@ -17,8 +17,10 @@
    
 }
 
+body {
+      background-image:url(https://i.postimg.cc/bNwX5mkS/output-onlinepngtools-8.png);
+}
     #app {
-        background-image:url(https://i.postimg.cc/bNwX5mkS/output-onlinepngtools-8.png);
         background-repeat:no-repeat;
         background-size:cover;
         font-family:"montserrat";
