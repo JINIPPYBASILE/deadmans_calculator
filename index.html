@@ -29,7 +29,7 @@
     
   <div class="row no-gutters mt-1" style="text-align:center">
     <div class="col-lg-5 " >
-            <h2 style="text-align:center"><i class="fa-solid fa-calculator"></i> Cadaver Cooling Curve Calculator <i class="fa-solid fa-person-falling-burst"></i></h1>
+            <h1 style="text-align:center"><i class="fa-solid fa-calculator"></i> Cadaver Cooling Curve Calculator <i class="fa-solid fa-person-falling-burst"></i></h1>
               <center>BY JINIPPYBASILE/VERNE GO</center>
                 <small style="font-size:13px;opacity:0.5;">Powered by GitHub © JINIPPYBASILE 2024</small>
          
@@ -53,20 +53,30 @@
         </div>
     </div>
   </div>
+ <div class="badge badge-secondary ml-2"> <h6>Currently selected model: Line of best fit (linear)</h6></div>
+  <div class="row no-gutters">
+<div class="p-2 col-4"><a class="btn btn-info col-12">Line of best fit (linear)</a></div>
+<div class="p-2 col-4"><a class="btn btn-info notactive col-12">Newton's Law of Cooling</a></div>
+<div class="p-2 col-4"><a class="btn btn-info notactive col-12">Marshall and Hoare's Equation</a></div>
+    
+  </div> 
     
     <div class="row no-gutters">
         <div class="col-lg-2 col-md-2">
-            <div class="controls">
-                <input type="text" id="points" placeholder="Enter points (e.g., 1,2 3,4)">
-                <button onclick="plotPoints()">Plot Points</button>
-                <button onclick="calculateLineOfBestFit()">Line of Best Fit</button>
-              </div>
+          <div class="controls">
+            <input type="text" id="x-values" placeholder="Enter X-values (e.g., 1, 2, 3)">
+            <input type="text" id="y-values" placeholder="Enter Y-values (e.g., 4, 5, 6)">
+            <button onclick="plotPoints()">Plot Points</button>
+            <hr>
+            <button onclick="calculateLineOfBestFit()">Calculate the line of best fit!</button>
+           
         </div>
+      </div>
         <div class="col-lg-10 col-md-10">
-         
-              <div id="graph-container">
-                <canvas id="graph"></canvas>
-              </div>
+            <div id="graph-container">
+            <canvas id="graph"></canvas>
+          </div>
+          <p>Time after death (hours)</p>
         </div>
       </div>
 </div>
