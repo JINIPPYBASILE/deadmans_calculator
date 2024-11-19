@@ -1,18 +1,18 @@
 //make the grid
-  const canvas = document.getElementById('graph');
+const canvas = document.getElementById('graph');
 const ctx = canvas.getContext('2d');
 canvas.width = 600; // Width of canvas
 canvas.height = 600; // Height of canvas
+ctx.fillStyle = "#ddd"
 
 function drawGraph() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
   // Draw grid lines
   ctx.beginPath();
-  ctx.strokeStyle = "#ccc";
+  ctx.strokeStyle = "#000";
 
   // Scale grid to match 100x100 system
-  const step = canvas.width / 10; // Divide into 10 divisions
+  const step = canvas.width / 50; // Divide into 100 divisions
   for (let i = 0; i <= canvas.width; i += step) {
     // Vertical lines
     ctx.moveTo(i, 0);
@@ -26,7 +26,7 @@ function drawGraph() {
   ctx.closePath();
 
   // Draw axis labels
-  ctx.font = "12px Arial";
+  ctx.font = "14px Arial";
   ctx.fillStyle = "#000";
   for (let i = 0; i <= 100; i += 10) {
     const scaled = i * (canvas.width / 100);
@@ -100,3 +100,5 @@ function calculateLineOfBestFit() {
   ctx.stroke();
   ctx.closePath();
 }
+
+
